@@ -1,20 +1,28 @@
-/* Surprise! You probably thought you could just forget
-the line of code you just learned! Nope, not on my watch!
+import React from "react"
+import ReactDOM from "react-dom/client"
 
-Try to write that 1-liner of React code again! This time,
-see if you can figure out how to render an <ul> with 2+ <li>s inside*/
+/**
+Challenge: find out what happens if we try to append JSX
+to our div#root using .append() instead of ReactDOM
+
+1. Create a sample page in JSX (≥ 4 elements) and save them in a variable
+2. Select the div with the ID of "root" and use `.append()` to append
+   your JSX
+3. See if you can guess what will show up in the browser before running
+   the code
+4. See if you can explain what actually shows up in the browser
+ */
 
 const navbar = (
-    <nav className="navbar">
-        <h1 className="heading1">
-            Great Websites R Us
-        </h1>
-        <ul>
-            <li>Pricing</li>
-            <li>Work</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+   <nav>
+      <h1>Great Websites R Us</h1>
+      <ul>
+         <li>Home</li>
+         <li>About</li>
+         <li>Contact</li>
+      </ul>
+   </nav>
 )
 
-ReactDOM.render(navbar, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(navbar);

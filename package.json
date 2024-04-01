@@ -1,5 +1,40 @@
 {
-  "name": "project",
-  "dependencies": {},
-  "devDependencies": {}
+  "name": "reactinfosite",
+  "version": "1.0.0",
+  "description": "Scrimba.com Learn React course - React Info Site lesson",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^2.0",
+    "babel-core": "^6.0",
+    "babel-loader": "^7.0",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack -w"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtdBoot/ReactInfoSite_Scrimba.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "scrimba",
+    "bootcamp",
+    "don",
+    "dtd"
+  ],
+  "author": "Charles Lam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtdBoot/ReactInfoSite_Scrimba/issues"
+  },
+  "homepage": "https://github.com/dtdBoot/ReactInfoSite_Scrimba#readme"
 }
